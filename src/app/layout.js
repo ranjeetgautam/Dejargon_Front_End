@@ -1,4 +1,10 @@
 import "./globals.css";
+import { Lato } from "next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"], // choose weights you need
+});
 
 export const metadata = {
   title: "Dejargon",
@@ -7,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={lato.className}>
       <body>{children}</body>
     </html>
   );
