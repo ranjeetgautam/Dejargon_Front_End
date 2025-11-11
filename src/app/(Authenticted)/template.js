@@ -1,9 +1,5 @@
-
-
 const Template = () => {
-  return (
-    <div>template</div>
-  )
-}
+  return <div>template....</div>;
+};
 
-export default Template
+export default Template;
