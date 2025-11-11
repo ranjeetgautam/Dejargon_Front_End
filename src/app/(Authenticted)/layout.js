@@ -1,10 +1,12 @@
-"use client";
 
-import React from "react";
+import Header from "@/components/Header/header";
 
 const AuthLayout = ({ children }) => {
   return (
-    <div className="w-full h-full overflow-y-auto bg-gray-100">{children}</div>
+    <div className="w-full h-full overflow-y-auto bg-gray-100">
+      <Header />
+      {children}
+    </div>
   );
 };
 
