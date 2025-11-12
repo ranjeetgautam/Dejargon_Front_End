@@ -6,8 +6,8 @@ import UploadDocument from "../UploadDocument/UploadDocument";
 
 function HeroSection() {
   return (
-    <main className="w-full bg-primary">
-      <div className="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-8 items-center">
+    <main className="w-full bg-primary py-6 px-16 ">
+      <div className="container mx-auto  py-16 grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-8 items-center">
         {/* Left Text Section */}
         <div className="flex flex-col justify-center text-center md:text-left space-y-6 md:pr-10">
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-tertiary leading-snug">
@@ -20,7 +20,7 @@ function HeroSection() {
             and how to fix it — before you commit.
           </p>
 
-          <div className="w-full md:w-[85%] lg:w-[80%] mx-auto md:mx-0">
+          <div className="w-full md:w-[85%] lg:w-[80%] mx-auto md:mx-0 mt-20">
             <UploadDocument />
           </div>
         </div>

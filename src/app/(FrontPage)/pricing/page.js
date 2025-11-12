@@ -1,9 +1,14 @@
 "use client";
 
+import Pricing from "@/components/FrontPage/Pricing";
 import React from "react";
 
-function page() {
-  return <div>Princing</div>;
+function Page() {
+  return (
+    <div>
+      <Pricing />
+    </div>
+  );
 }
 
-export default page;
+export default Page;
