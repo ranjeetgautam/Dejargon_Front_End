@@ -6,10 +6,7 @@ import React, { useEffect } from "react";
 function About() {
   return (
     <div>
-      About Page{" "}
-      <div>
-        <CommonButton isCancelBtn isPending={true} />
-      </div>
+      About Page
     </div>
   );
 }
