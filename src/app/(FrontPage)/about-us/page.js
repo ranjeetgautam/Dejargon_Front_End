@@ -1,14 +1,16 @@
 "use client";
 
 import CommonButton from "@/components/Button/CommonButton";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import PersonIcon from "@mui/icons-material/Person";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
-
+import Pagination from "@/components/Pagination/Pagination";
 
 function About() {
+  const [current, setCurrent] = useState(1);
+  const total = 12;
   const stages = [
     {
       name: "Start",
@@ -29,7 +31,7 @@ function About() {
   return (
     <div className="p-10 min-h-screen flex items-center justify-center">
       <div className="w-3/4">
-        <ProgressBar stages={stages} />
+        <Pagination total={total} current={current} setCurrent={setCurrent} />
       </div>
     </div>
   );
