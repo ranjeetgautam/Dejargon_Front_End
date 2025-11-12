@@ -6,7 +6,7 @@ import Logo from "@public/Logo.png";
 
 const Header = () => {
   return (
-    <header className="w-full h-20 flex items-center justify-between px-10 bg-white shadow-sm">
+    <header className="w-full h-20 flex items-center justify-between px-10 shadow-sm">
       {/* Logo */}
       <div className="text-[#001A47] text-2xl font-extrabold tracking-tight">
         <Image src={Logo} alt="Logo" width={143.26} height={36} />

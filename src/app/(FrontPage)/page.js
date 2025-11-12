@@ -4,7 +4,7 @@ import HeroSection from "@/components/FrontPage/HeroSection";
 const Page = () => {
   return (
     <main>
-      <div className="px-5 ">
+      <div className="px-5">
         <HeroSection />
         <Content />
       </div>

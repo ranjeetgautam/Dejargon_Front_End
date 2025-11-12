@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import HeroImg from "@public/frontPage/heroSection.png";
+import UploadDocument from "../UploadDocument/UploadDocument";
 
 function HeroSection() {
   return (
