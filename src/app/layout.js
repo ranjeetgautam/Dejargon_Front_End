@@ -1,3 +1,4 @@
+import Header from "@/components/Header/header";
 import "./globals.css";
 import { Lato } from "next/font/google";
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="min-h-screen bg-primary">
         {/* Header */}
-        {/* <Header /> */}
+        <Header />
 
         <div className="max-w-[90rem] mx-auto">
           {children}
