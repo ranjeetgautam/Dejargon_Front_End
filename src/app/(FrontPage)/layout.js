@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/header";
 import Loader from "@/components/Loader/Loader";
 import { useEffect, useState } from "react";
@@ -18,7 +19,7 @@ const FrontLayout = ({ children }) => {
   }, []);
 
   return (
-    <div className="w-full h-full overflow-y-auto bg-primary">
+    <div className=" h-full overflow-y-auto ">
       {showLoader ? (
         <Loader />
       ) : (
@@ -26,6 +27,7 @@ const FrontLayout = ({ children }) => {
           {" "}
           <Header />
           {children}
+          <Footer />
         </>
       )}
     </div>

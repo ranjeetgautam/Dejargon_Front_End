@@ -14,7 +14,7 @@ const CommonButton = ({
   postFix = null,
   ...restProps
 }) => {
-  const btnTitle = btnText ? t(btnText) : children;
+  const btnTitle = btnText ? btnText : children;
   const commonClass =
     "border-2 border-tertiary font-semibold px-6 py-2 rounded-full";
 
