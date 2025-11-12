@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Loader from "../Loader/Loader";
 // import { FaLock } from "react-icons/fa";
 
 export default function UploadDocument() {
   const [file, setFile] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const handleFileChange = (e) => {
     const selected = e.target.files[0];
